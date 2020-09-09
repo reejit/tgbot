@@ -1,0 +1,21 @@
+import random, re
+from uniborg.util import admin_cmd
+import asyncio
+from telethon import events
+
+@borg.on(admin_cmd(pattern="plu ?(.*)"))
+async def _(event):
+     if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
+        await event.edit("Jaha hota ha Plugins ka problem")
+        await asyncio.sleep(2)
+        await event.edit("Wahi Khada hota hai ek channel")
+        await asyncio.sleep(2)
+        await event.edit("Name hai uska secret")
+        await asyncio.sleep(2)
+        await event.edit("Naam yad rakhna😏")
+        await asyncio.sleep(2)
+        await event.edit("Phir bhi bata deta hu")
+        await asyncio.sleep(2)
+        await event.edit("Uskan naam hai @CheckedPlugins ")
+        await asyncio.sleep(2)
+        await event.edit("Jaha hota hai Plugins ka problem.Wahi khada hota hai ek channel.Name hai uska secret.Phir bhi bata deta hu .Uska naam hai @CheckedPlugins.Naam yaad rakhna.")
